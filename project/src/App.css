@@ -38,12 +38,19 @@
 }
 
 .crud{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #c9d6ff;
+  background: linear-gradient(to right,#e2e2e2,#c9d6ff);
+
   }
-  
+  table {
+    background: #ffffff;
+    width: 100%;
+    padding: 1rem;
+    color: black;
+    border-collapse: collapse;
+  }
+
+ 
   table td{
     width: 200px;
     height: 30px;
@@ -52,11 +59,18 @@
     color: #ffffff;
   }
   
-  table td button{
-    padding: 5px 10px;
-    border-radius: 5%;
-    cursor: pointer;
-  }
+  th,td{
+    padding: 1rem;
+}
+
+th{
+    text-align: left;
+    background: hsl(100 100% 100%);
+}
+
+tr:nth-of-type(2n){
+    background: hsl(207 83% 75%);
+}
   
   table td button.edit{
     border: 1px solid green;
